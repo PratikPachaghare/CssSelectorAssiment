@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Navigation Menu</title>
+  <style>
+    a {
+      color: red;
+    }
+
+    h2:first-of-type {
+      color: blue;
+      background-color: lightgray;
+    }
+
+    p:first-of-type {
+      color: red;
+    }
+
+    a[href] {
+      color: red;
+      text-decoration: none;
+    }
+
+    a.active {
+      color: blue;
+      text-decoration: underline;
+      font-style: italic;
+    }
+
+    a[target="_self"] {
+      background-color: lightblue;
+    }
+
+    p:last-of-type::after {
+      content: "...";
+    }
+
+    ul > li::marker {
+      color: green;
+    }
+
+    p:nth-of-type(2)::first-letter {
+      color: red;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>This is the first heading</h2>
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+    <p>This is the last paragraph.</p>
+  </main>
+</body>
+</html>
